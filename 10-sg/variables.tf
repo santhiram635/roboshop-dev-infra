@@ -14,5 +14,7 @@ variable "sg_names" {
         "catalogue", "user", "cart", "shipping", "payment",
         # frontend
         "frontend",
+        # bastion
+        "bastion"
     ]
 }
