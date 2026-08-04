@@ -125,10 +125,10 @@ resource "aws_launch_template" "catalogue" {
 
 }
 
-resource "aws_iam_service_linked_role" "autoscaling" {
-  aws_service_name = "autoscaling.amazonaws.com"
-  description      = "Service-linked role for Auto Scaling"
-}
+# resource "aws_iam_service_linked_role" "autoscaling" {
+#   aws_service_name = "autoscaling.amazonaws.com"
+#   description      = "Service-linked role for Auto Scaling"
+# }
 
 resource "aws_autoscaling_group" "catalogue" {
   name                      = "${local.common_name_suffix}-catalogue"
